@@ -6,14 +6,14 @@
 // Update blue
 $blue: #ebc125;
 // Add pink and its invert
-$pink: #ffb3b3;
+$dark_blue: #14374A;
 $pink-invert: #fff;
 // Add a serif family
 //$family-serif: "Merriweather", "Georgia", serif;
 
 // 3. Set the derived variables
 // Use the new pink as the primary color
-$primary: $pink;
+$primary: $dark_blue;
 $primary-invert: $pink-invert;
 // Use the existing orange as the danger color
 $danger: $orange;
@@ -39,3 +39,44 @@ $colors: map-merge($colors, $addColors);
 
 // 6. Import the rest of Bulma
 @import '~bulma/bulma';
+
+body {
+  background: $dark_blue;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 24px;
+}
+
+h1, h2, h3, h4 {
+  color: #a1b5c1;
+}
+
+.tabs.is-boxed {
+  ul {
+    border-bottom-color: #507691;
+    li {
+      margin-right: 3px;
+      a {
+        color: #507691;
+        background: $dark_blue;
+        border-color: #507691 !important;
+        &:hover {
+          background-color: lighten($dark_blue, 5%);
+        }
+      }
+      &.is-active {
+        a {
+          color: #a1b5c1;
+          background-color: $dark_blue;
+        }
+      }
+    }
+  }
+}
+
+.table.is-striped {
+
+}
