@@ -7,45 +7,45 @@
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css">-->
 </head>
 <body>
-<div id="app">
-    <div class="container">
-        <nav class="level">
-            <div class="level-left">
-                <div class="level-item">
-                    <p class="subtitle is-5">
-                        <strong>Exchange watcher</strong>
-                    </p>
-                </div>
-                <div class="level-item">
-                    <div class="field has-addons">
-                        <p class="control">
-                            <input class="input" type="text" placeholder="Find a post">
-                        </p>
-                        <p class="control">
-                            <button class="button">
-                                Search
-                            </button>
+    <div id="app">
+        <div class="container">
+            <nav class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <p class="subtitle is-5">
+                            <strong>Exchange watcher</strong>
                         </p>
                     </div>
+                    <div class="level-item">
+                        <div class="field has-addons">
+                            <p class="control">
+                                <input class="input" type="text" placeholder="Find a post">
+                            </p>
+                            <p class="control">
+                                <button class="button">
+                                    Search
+                                </button>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="level-right">
-                <p class="level-item"><strong>All</strong></p>
-                <p class="level-item"><a>Published</a></p>
-                <p class="level-item"><a>Drafts</a></p>
-                <p class="level-item"><a>Deleted</a></p>
-                <p class="level-item"><a class="button is-success">New</a></p>
-            </div>
-        </nav>
-    </div>
-    <section class="section">
-        <div class="container">
-            <router-view></router-view>
+                <div class="level-right">
+                    <p class="level-item"><strong>All</strong></p>
+                    <p class="level-item"><a>Published</a></p>
+                    <p class="level-item"><a>Drafts</a></p>
+                    <p class="level-item"><a>Deleted</a></p>
+                    <p class="level-item"><a class="button is-success">New</a></p>
+                </div>
+            </nav>
         </div>
-    </section>
-</div>
-<!-- built files will be auto injected -->
+        <section class="section">
+            <div class="container">
+                <router-view></router-view>
+            </div>
+        </section>
+    </div>
+    <!-- built files will be auto injected -->
 
-<script src="/src/main.js"></script>
+    <script src="/src/main.js"></script>
 </body>
 </html>
